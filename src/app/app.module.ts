@@ -28,7 +28,7 @@ import {Hotspot} from "@ionic-native/hotspot";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [

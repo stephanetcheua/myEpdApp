@@ -10,12 +10,27 @@
 <ion-content padding>
   <h3>Meine Aktuelle Wlan-Verbindung</h3>
 
-  <p *ngFor="let post of posts">
-    {{post}}
-    {{post.length}}
-    Test
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <!--<p *ngFor="let post of posts">-->
+    <!--{{post}}-->
+    <!--{{post.length}}-->
+    <!--Test-->
+    <!--If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.-->
+  <!--</p>-->
 
-
+<ion-row>
+  <ion-col>
+    <div *ngFor="let item of data">
+      <ion-card>
+        <ion-item>
+          <ion-avatar item-start="">
+            <img src="{{item.picture.thumbnail}}">
+          </ion-avatar>
+          <h2>{{item.name.first}}  {{item.name.last}}</h2>
+          <p>{{item.dob}}</p>
+        </ion-item>
+Test
+      </ion-card>
+    </div>
+  </ion-col>
+</ion-row>
 </ion-content>
